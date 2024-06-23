@@ -1,0 +1,14 @@
+services:
+  devcontainer:
+    image: reaper8055/dev-container:latest
+    container_name: dev-container
+    volumes:
+      - project-volume:/home/devuser/Projects
+    tty: true
+
+volumes:
+  project-volume:
+    driver: local
+    driver_opts:
+      type: ext4
+      device: /dev/loop13

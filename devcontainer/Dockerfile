@@ -1,5 +1,5 @@
 # Use an official Ubuntu base image
-FROM ubuntu:24.04
+FROM ubuntu:24.10
 
 ENV USER=devuser
 ENV HOME=/home/$USER
